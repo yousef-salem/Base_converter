@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<ImageView
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/baseline_play_arrow_24"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/large_font"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/lable_et"
+        android:layout_margin="5dp"
+        android:textSize="@dimen/small_font"
+        android:text="@string/binary"/>
+
+    <EditText
+        android:id="@+id/binary_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/et_bg_shape"
+        android:numeric="integer" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/lable_et"
+        android:layout_margin="5dp"
+        android:textSize="@dimen/small_font"
+        android:text="@string/octal"/>
+
+    <EditText
+        android:id="@+id/octal_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:numeric="integer"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/et_bg_shape" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/lable_et"
+        android:layout_margin="5dp"
+        android:textSize="@dimen/small_font"
+        android:text="@string/decimal"/>
+
+    <EditText
+        android:id="@+id/decimal_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/et_bg_shape"
+        android:numeric="decimal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/lable_et"
+        android:layout_margin="5dp"
+        android:textSize="@dimen/small_font"
+        android:text="@string/hexadecimal"/>
+
+    <EditText
+        android:id="@+id/Hexadecimal_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:numeric="integer"
+        android:background="@drawable/et_bg_shape" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/clear_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_bg_shape"
+        android:text="@string/clear"
+        style="@style/lable_et"
+        android:textAllCaps="false" />
+</LinearLayout>
