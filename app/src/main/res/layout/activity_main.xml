@@ -19,7 +19,7 @@
         android:textSize="@dimen/large_font"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:layout_gravity="center"/>
     <TextView
         android:layout_width="wrap_content"
@@ -30,14 +30,19 @@
         android:text="@string/binary"/>
 
     <EditText
+
         android:id="@+id/binary_et"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
+        android:maxLines="1"
+        android:paddingHorizontal="8dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/et_bg_shape"
-        android:numeric="integer" />
+        android:maxLength="63"
+        android:digits="01"
+       />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,9 +54,12 @@
     <EditText
         android:id="@+id/octal_et"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
+        android:maxLines="1"
+        android:paddingHorizontal="8dp"
         android:layout_marginLeft="5dp"
-        android:numeric="integer"
+        android:digits="01234567"
+        android:maxLength="21"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/et_bg_shape" />
@@ -66,12 +74,15 @@
     <EditText
         android:id="@+id/decimal_et"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
+        android:maxLines="1"
+        android:paddingHorizontal="8dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
+        android:maxLength="18"
         android:layout_marginBottom="20dp"
         android:background="@drawable/et_bg_shape"
-        android:numeric="decimal" />
+        android:digits="0123456789" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,11 +94,14 @@
     <EditText
         android:id="@+id/Hexadecimal_et"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
+        android:maxLines="1"
+        android:paddingHorizontal="8dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
+        android:maxLength="15"
         android:layout_marginBottom="20dp"
-        android:numeric="integer"
+        android:digits="0123456789ABCDEFabcdef"
         android:background="@drawable/et_bg_shape" />
 
     <androidx.appcompat.widget.AppCompatButton
